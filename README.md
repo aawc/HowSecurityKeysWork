@@ -54,10 +54,10 @@ have 2FA enabled for your [Google](https://www.google.com) account.
 
 Here's what you would do:
 1. Open ```www.google.com/mail```
-2. You are asked to login into your account.
-3. You enter your username.
-4. You enter your password.
-5. You are logged in.
+1. You are asked to login into your account.
+1. You enter your username.
+1. You enter your password.
+1. You are logged in.
 
 ![Google Login Page](GoogleLoginPageSmall.png)
 *Scenario 1: Google Login Page*
@@ -66,10 +66,10 @@ Now consider another scenario. You cousin Vinny sends you an email that contains
 a link to a **free lottery to win an iPad**. When you click on the link, you are
 shown a similar login page and here's what happens:
 1. The link goes to ```www.gogle.com/mail```
-2. You are asked to login into your account.
-3. You enter your username.
-4. You enter your password.
-5. You are logged in.
+1. You are asked to login into your account.
+1. You enter your username.
+1. You enter your password.
+1. You are logged in.
 
 ![Gogle Login Page](GogleLoginPageSmall.png)
 *Scenario 1: Gogle Login Page*
