@@ -53,6 +53,7 @@ Let's say you want to read your Gmail emails, and let's assume that you do not
 have 2FA enabled for your [Google](https://www.google.com) account.
 
 Here's what you would do:
+
 1. Open ```www.google.com/mail```
 1. You are asked to login into your account.
 1. You enter your username.
@@ -65,6 +66,7 @@ Here's what you would do:
 Now consider another scenario. You cousin Vinny sends you an email that contains
 a link to a **free lottery to win an iPad**. When you click on the link, you are
 shown a similar login page and here's what happens:
+
 1. The link goes to ```www.gogle.com/mail```
 1. You are asked to login into your account.
 1. You enter your username.
