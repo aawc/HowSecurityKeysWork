@@ -14,7 +14,7 @@
 - [How can I avoid being phished?](#how-can-i-avoid-being-phished)
 - [How does a U2F Key defend against phishing?](#how-does-a-u2f-key-defend-against-phishing)
 - [How does a U2F Key actually work?](#how-does-a-u2f-key-actually-work)
-	- [Motivation](#motivation)
+- [Motivation](#motivation)
 - [Sources](#sources)
 
 <!-- /TOC -->
@@ -139,7 +139,7 @@ For more details about how U2F keys work, see:
 1. [Yubico’s take onU2F Key wrapping](https://www.yubico.com/2014/11/yubicos-u2f-key-wrapping/)
 2. [FIDO Specifications Overview](https://fidoalliance.org/specifications/overview/)
 
-## Motivation
+# Motivation
 
 [Zeynep Tufekci](https://en.wikipedia.org/wiki/Zeynep_Tufekci) spoke at the
 [Engima 2017](https://www.usenix.org/conference/enigma2017) conference about
