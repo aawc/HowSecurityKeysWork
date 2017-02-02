@@ -1,6 +1,6 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Motivation](#motivation)
+- [Goal of this document](#goal-of-this-document)
 - [Make logging into your Google account more secure using a Security Key](#make-logging-into-your-google-account-more-secure-using-a-security-key)
 - [Terms](#terms)
 	- [Phishing](#phishing)
@@ -13,20 +13,22 @@
 		- [Bad scenario](#bad-scenario)
 		- [Wait, why was that a bad scenario!?](#wait-why-was-that-a-bad-scenario)
 		- [That's bad indeed. How can I avoid this?](#thats-bad-indeed-how-can-i-avoid-this)
-	- [Motivation:](#motivation)
+		- [But, how does a U2F Key make it more secure for me?](#but-how-does-a-u2f-key-make-it-more-secure-for-me)
+		- [And, how does a U2F Key actually work?](#and-how-does-a-u2f-key-actually-work)
+	- [Motivation](#motivation)
 - [Sources](#sources)
 
 <!-- /TOC -->
 
-# Motivation
+# Goal of this document
 
-A simple, easy to understand document that aims to describe the problem of
-[Phishing](#phishing), how using two-factor authentication helps defeat it, and
-how physical security keys make Phishing impossible.
+The goal here is to write a simple, easy to understand document that describes
+the problem of [Phishing](#phishing), how using two-factor authentication helps
+defeat it, and how physical security keys make Phishing impossible.
 
 **It is targeted towards non-technical audience.**
 
-Pull requests are welcome and encouraged.
+Pull requests are most welcome and encouraged.
 
 # Make logging into your Google account more secure using a Security Key
 
@@ -115,26 +117,43 @@ Here's what may have happened in the background:
 
 1. You entered your Google credentials on ```gogle.com```.
 1. Now the owner of ```gogle.com``` has your Google credentials.
-1. They can now use those credentials to login on Google as you and do bad things such as read your email, send email as you (to your contacts or other people), etc.
+1. They can now use those credentials to login on Google as you and do bad things such as read your email, send email as you (to your contacts or other people),
+etc.
+
+This is called phishing. Phishing works because the bad actor only needs your
+login credentials to login as you.
 
 ### That's bad indeed. How can I avoid this?
 
 I'm glad you asked that. One of the best ways to avoid this, currently, is to
 enable [2FA](#two-factor-authentication-2fa) and use a [U2F Key](#u2f-keys) as
-the second factor.
+the second factor for authentication.
 
-## Motivation:
-<https://github.com/aawc/Enigma2017Notes#security-in-the-wild-for-low-profile-activists>
+### How does a U2F Key make it more secure for me?
 
-- How do security keys work?
+Put simply, even if someone manages to phish you and get the login credentials
+for your Google account, they still need physical access to the U2F Key that
+acts as the second factor for authentication.
 
-  - <http://www.explainthatstuff.com/how-security-tokens-work.html>
-  - <https://www.yubico.com/about/background/fido/>
-  - <https://www.facebook.com/notes/facebook-security/security-key-for-safer-logins-with-a-touch/10154125089265766>
-  - http://heatherandwill.io/key
+### How does a U2F Key actually work?
+
+For more details about how U2F keys work, see:
+
+1. [Yubico’s take onU2F Key wrapping](https://www.yubico.com/2014/11/yubicos-u2f-key-wrapping/)
+2. [FIDO Specifications Overview](https://fidoalliance.org/specifications/overview/)
+
+## Motivation
+
+[Zeynep Tufekci](https://en.wikipedia.org/wiki/Zeynep_Tufekci) spoke at the
+[Engima 2017](https://www.usenix.org/conference/enigma2017) conference about
+*[Security in the Wild for Low-Profile Activists](https://github.com/aawc/Enigma2017Notes#security-in-the-wild-for-low-profile-activists)*.
+
+She mentioned how it was difficult for her to convince activists to use U2F keys
+because they did not understand how they work and how to use them.
 
 # Sources
 
 - <https://en.wikipedia.org/wiki/Multi-factor_authentication>
 - <https://en.wikipedia.org/wiki/Universal_2nd_Factor>
 - U2F image source: [LogicLounge](https://www.youtube.com/watch?v=EVx3QkJ8_J0)
+- https://www.yubico.com/about/background/fido/
