@@ -22,8 +22,8 @@
 # Goal of this document
 
 The goal here is to write a simple, easy to understand document that describes
-the problem of [Phishing](#phishing), how using two-factor authentication helps
-defeat it, and how physical security keys make Phishing impossible.
+the problem of [Phishing](#phishing), how physical security keys make Phishing
+harder.
 
 **It is targeted towards non-technical audience.**
 
@@ -31,7 +31,7 @@ Pull requests are most welcome and encouraged.
 
 # Make logging into your Google account more secure using a Security Key
 
-[Go do this. Now.]()
+[Go do this. Now.](https://support.google.com/accounts/answer/6103534)
 
 This will make logging into your Google account more secure for you, and harder
 for anyone else.
