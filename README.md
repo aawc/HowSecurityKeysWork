@@ -65,11 +65,9 @@ identity verification for 2FA. It looks like this:
 
 ![U2F Key](U2FKey.jpg)
 
-# Background
+# Problem to solve: Phishing
 
-## Problem to solve: Phishing
-
-### Good scenario
+## Good scenario
 
 Let's say you want to read your Gmail emails, and let's assume that you do not
 have 2FA enabled for your [Google](https://www.google.com) account.
@@ -86,7 +84,7 @@ Here's what you would do:
 
 *Scenario 1: Google Login Page*
 
-### Bad scenario
+## Bad scenario
 
 Now consider another scenario. Your cousin Vinny sends you an email that
 contains a hyperlink to a **free lottery to win an iPad**. When you click on the
@@ -104,7 +102,7 @@ been entered in a raffle to win the promised iPad.
 
 *Scenario 2: Gogle Login Page*
 
-### Wait, why was that a bad scenario!?
+## Wait, why was that a bad scenario!?
 
 Did you notice the missing ```o``` there in the website name in the URL?
 Let's take a closer look.
@@ -123,19 +121,19 @@ etc.
 This is called phishing. Phishing works because the bad actor only needs your
 login credentials to login as you.
 
-### That's bad indeed. How can I avoid this?
+# How can I avoid being phished?
 
 I'm glad you asked that. One of the best ways to avoid this, currently, is to
 enable [2FA](#two-factor-authentication-2fa) and use a [U2F Key](#u2f-keys) as
 the second factor for authentication.
 
-### How does a U2F Key make it more secure for me?
+# How does a U2F Key defend against phishing?
 
-Put simply, even if someone manages to phish you and get the login credentials
-for your Google account, they still need physical access to the U2F Key that
-acts as the second factor for authentication.
+Put simply, even if someone manages to get the login credentials for your Google
+account, they still need physical access to the U2F Key that acts as the second
+factor for authentication.
 
-### How does a U2F Key actually work?
+# How does a U2F Key actually work?
 
 For more details about how U2F keys work, see:
 
