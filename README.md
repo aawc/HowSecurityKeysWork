@@ -1,6 +1,7 @@
-<!-- TOC depthFrom:1 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Motivation](#motivation)
+- [Make logging into your Google account more secure using a Security Key](#make-logging-into-your-google-account-more-secure-using-a-security-key)
 - [Terms](#terms)
 	- [Phishing](#phishing)
 	- [Two-Factor Authentication (2FA)](#two-factor-authentication-2fa)
@@ -8,11 +9,16 @@
 	- [U2F Keys](#u2f-keys)
 - [Background](#background)
 	- [Problem to solve: Phishing](#problem-to-solve-phishing)
-		- [What happened?](#what-happened)
+		- [Good scenario](#good-scenario)
+		- [Bad scenario](#bad-scenario)
+		- [Wait, why was that a bad scenario!?](#wait-why-was-that-a-bad-scenario)
+		- [That's bad indeed. How can I avoid this?](#thats-bad-indeed-how-can-i-avoid-this)
 	- [Motivation:](#motivation)
 - [Sources](#sources)
 
-<!-- /TOC --># Motivation
+<!-- /TOC -->
+
+# Motivation
 
 A simple, easy to understand document that aims to describe the problem of
 [Phishing](#phishing), how using two-factor authentication helps defeat it, and
@@ -21,6 +27,16 @@ how physical security keys make Phishing impossible.
 **It is targeted towards non-technical audience.**
 
 Pull requests are welcome and encouraged.
+
+# Make logging into your Google account more secure using a Security Key
+
+[Go do this. Now.]()
+
+This will make logging into your Google account more secure for you, and harder
+for anyone else.
+
+Now that you've done that, allow me to tell you **how** it makes logging into
+your Google account more secure.
 
 # Terms
 
@@ -58,11 +74,11 @@ have 2FA enabled for your [Google](https://www.google.com) account.
 
 Here's what you would do:
 
-1. Open ```www.google.com/mail```
+1. Open ```https://www.google.com/mail```
 1. You are asked to login into your Google account.
 1. You enter your username.
 1. You enter your password.
-1. You are shown your Gmail emails.
+1. You can now access your Gmail emails.
 
 ![Google Login Page](GoogleLoginPageSmall.png)
 
@@ -70,9 +86,10 @@ Here's what you would do:
 
 ### Bad scenario
 
-Now consider another scenario. You cousin Vinny sends you an email that contains
-a link to a **free lottery to win an iPad**. When you click on the link, you are
-shown a similar login page and here's what happens:
+Now consider another scenario. Your cousin Vinny sends you an email that
+contains a hyperlink to a **free lottery to win an iPad**. When you click on the
+link, you are shown a login page similar to previous scenario and here's what
+happens:
 
 1. The link goes to ```www.gogle.com```
 1. You are asked to login into your Google account.
@@ -85,20 +102,26 @@ been entered in a raffle to win the promised iPad.
 
 *Scenario 2: Gogle Login Page*
 
-### Wait, why was that bad!?
+### Wait, why was that a bad scenario!?
 
 Did you notice the missing ```o``` there in the website name in the URL?
 Let's take a closer look.
 
 ![Gogle.com?](AccountsGogleCom.png)
 
-*Did you intend to enter your Google credentials (username and password) on Gogle.com?*
+*Did you intend to enter your Google credentials (username and password) on ```gogle.com```?*
 
 Here's what may have happened in the background:
 
 1. You entered your Google credentials on ```gogle.com```.
 1. Now the owner of ```gogle.com``` has your Google credentials.
 1. They can now use those credentials to login on Google as you and do bad things such as read your email, send email as you (to your contacts or other people), etc.
+
+### That's bad indeed. How can I avoid this?
+
+I'm glad you asked that. One of the best ways to avoid this, currently, is to
+enable [2FA](#two-factor-authentication-2fa) and use a [U2F Key](#u2f-keys) as
+the second factor.
 
 ## Motivation:
 <https://github.com/aawc/Enigma2017Notes#security-in-the-wild-for-low-profile-activists>
