@@ -15,6 +15,7 @@
 - [How does a U2F Key defend against phishing?](#how-does-a-u2f-key-defend-against-phishing)
 - [How does a U2F Key actually work?](#how-does-a-u2f-key-actually-work)
 - [Motivation](#motivation)
+- [Clarification](#clarification)
 - [Sources](#sources)
 
 <!-- /TOC -->
@@ -126,11 +127,17 @@ I'm glad you asked that. One of the best ways to avoid this, currently, is to
 enable [2FA](#two-factor-authentication-2fa) and use a [U2F Key](#u2f-keys) as
 the second factor for authentication.
 
+I repeat: [Go do this. Now.](https://support.google.com/accounts/answer/6103534)
+
 # How does a U2F Key defend against phishing?
 
 Put simply, even if someone manages to get the login credentials for your Google
 account, they still need physical access to the U2F Key that acts as the second
 factor for authentication.
+
+So for the [Bad Scenario](#bad-scenario) above, even if the owner of
+```gogle.com``` gets your username and password, they won't have access to your
+U2F key, which would make it impossible for them to log in as you.
 
 # How does a U2F Key actually work?
 
@@ -147,6 +154,11 @@ For more details about how U2F keys work, see:
 
 She mentioned how it was difficult for her to convince activists to use U2F keys
 because they did not understand how they work and how to use them.
+
+# Clarification
+
+Please note that I am not claiming that the owner of ```gogle.com``` is trying
+to phish internet users. That's just an example.
 
 # Sources
 
